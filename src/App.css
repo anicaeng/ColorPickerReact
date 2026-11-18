@@ -1,0 +1,42 @@
+.color-picker {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 40px;
+}
+
+.color-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.color-item {
+  width: 110px;
+  height: 110px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: transform 0.15s ease;
+}
+
+.color-item:hover {
+  transform: scale(1.05);
+}
+
+.color-item.focused {
+  border-color: #000000;
+  outline: none;
+}
+
+.color-code {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
